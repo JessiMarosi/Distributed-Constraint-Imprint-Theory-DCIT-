@@ -1,6 +1,6 @@
-﻿# Distributed Constraint Imprint Theory (DCIT)
+# Distributed Constraint Imprint Theory (DCIT)
 
-**Project Classification:** Forensic Theory  Measurement Systems  Reconstruction Framework  
+**Project Classification:** Forensic Theory → Measurement Systems → Reconstruction Framework  
 **Status:** Foundational Theory (Canon)  
 **Scope:** Post-event reconstruction only (no monitoring, no surveillance)  
 **Audience:** Digital Forensics, DFIR, Academic Review, Federal / Enterprise Forensic Use  
@@ -14,7 +14,9 @@ This repository defines **Distributed Constraint Imprint Theory (DCIT)** as a fo
 DCIT is not software.  
 DCIT is not a monitoring system, detection engine, or analytics platform.
 
-DCIT establishes the epistemic and structural boundaries under which post-event digital reconstruction may be performed without expanding into surveillance, profiling, behavioral analytics, or expressive content analysis.
+DCIT establishes the epistemic and structural boundaries under which post-event digital reconstruction may be performed without expanding into surveillance, profiling, behavioral analytics, or expressive or semantic content analysis.
+
+“Post-event” means processing closed artifact sets that already exist under independent operational logging practices. DCIT does not initiate continuous collection, retention pipelines, telemetry agents, or always-on observation mechanisms.
 
 The theory is intentionally separated from implementation. Any instrument that claims to implement DCIT must conform to the constraints defined here.
 
@@ -27,7 +29,9 @@ The theory is intentionally separated from implementation. Any instrument that c
 > High-impact digital actions impose measurable constraints across distributed technical systems.  
 > These constraints leave persistent imprints that allow bounded post-event reconstruction without interpreting identity, intent, expressive or semantic content, or behavior.
 
-DCIT is concerned with what must have occurred within bounded parameters  not who performed it, not why it occurred, and not what was said.
+“High-impact” refers exclusively to measurable deviation from baseline operational envelopes across independent technical systems. It does not refer to human, social, financial, or political impact.
+
+DCIT is concerned with what must have occurred within bounded parameters — not who performed it, not why it occurred, and not what was said.
 
 ---
 
@@ -47,6 +51,7 @@ DCIT explicitly excludes:
 
 - Surveillance or monitoring  
 - Live telemetry ingestion  
+- Continuous collection or retention mechanisms  
 - Behavioral analytics  
 - Profiling  
 - Predictive modeling  
@@ -71,13 +76,13 @@ Digital actions leave residual artifacts across independent systems.
 Records diverge across systems in time and state; divergence itself is measurable.
 
 **Operational Load Imprint**  
-High-impact actions impose measurable strain beyond routine use.
+High-impact actions impose measurable resource or state deviations beyond baseline operational envelopes (e.g., queue depth, replication lag, journaling patterns, lock contention, dropped packets).
 
 **Path Constraint**  
 Once initiated, state transitions constrain future states, even under attempted reversal.
 
 **Environmental Coupling**  
-Actions couple to infrastructure beyond the actors control, generating independent artifacts.
+Actions couple to infrastructure beyond the actor’s control, generating independent artifacts.
 
 ---
 
@@ -135,7 +140,7 @@ Rights protection emerges from technical restraint rather than policy promises.
 
 ---
 
-## 8) TheoryInstrument Separation
+## 8) Theory–Instrument Separation
 
 DCIT is the theory layer.
 
