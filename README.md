@@ -11,10 +11,10 @@
 
 This repository defines **Distributed Constraint Imprint Theory (DCIT)** as a formal forensic reconstruction theory.
 
-DCIT is **not software**.  
-DCIT is **not** a monitoring system, detection engine, or analytics platform.
+DCIT is not software.  
+DCIT is not a monitoring system, detection engine, or analytics platform.
 
-DCIT establishes the epistemic and structural boundaries under which post-event digital reconstruction may be performed without expanding into surveillance, profiling, behavioral analytics, or speech analysis.
+DCIT establishes the epistemic and structural boundaries under which post-event digital reconstruction may be performed without expanding into surveillance, profiling, behavioral analytics, or expressive content analysis.
 
 The theory is intentionally separated from implementation. Any instrument that claims to implement DCIT must conform to the constraints defined here.
 
@@ -25,9 +25,9 @@ The theory is intentionally separated from implementation. Any instrument that c
 **Distributed Constraint Imprint Theory (DCIT)** holds that:
 
 > High-impact digital actions impose measurable constraints across distributed technical systems.  
-> These constraints leave persistent imprints that allow bounded post-event reconstruction without interpreting identity, intent, content, or behavior.
+> These constraints leave persistent imprints that allow bounded post-event reconstruction without interpreting identity, intent, expressive or semantic content, or behavior.
 
-DCIT is concerned with **what must have occurred** within bounded parameters  not who performed it, not why it occurred, and not what was said.
+DCIT is concerned with what must have occurred within bounded parameters  not who performed it, not why it occurred, and not what was said.
 
 ---
 
@@ -64,20 +64,20 @@ If those capabilities appear, the system is not DCIT-compliant.
 
 DCIT is operational. Its axioms function as engineering constraints:
 
-1. **Distributed Persistence**  
-   Digital actions leave residual artifacts across independent systems.
+**Distributed Persistence**  
+Digital actions leave residual artifacts across independent systems.
 
-2. **Asynchronous Divergence**  
-   Records diverge across systems in time and state; divergence itself is measurable.
+**Asynchronous Divergence**  
+Records diverge across systems in time and state; divergence itself is measurable.
 
-3. **Operational Load Imprint**  
-   High-impact actions impose measurable strain beyond routine use.
+**Operational Load Imprint**  
+High-impact actions impose measurable strain beyond routine use.
 
-4. **Path Constraint**  
-   Once initiated, state transitions constrain future states, even under attempted reversal.
+**Path Constraint**  
+Once initiated, state transitions constrain future states, even under attempted reversal.
 
-5. **Environmental Coupling**  
-   Actions couple to infrastructure beyond the actors control, producing independent artifacts.
+**Environmental Coupling**  
+Actions couple to infrastructure beyond the actors control, generating independent artifacts.
 
 ---
 
@@ -85,11 +85,11 @@ DCIT is operational. Its axioms function as engineering constraints:
 
 DCIT recognizes only three output states:
 
-- **Necessary**  
-- **Impossible**  
-- **Undetermined**  
+- Necessary  
+- Impossible  
+- Undetermined  
 
-DCIT does not produce probabilistic claims, risk scores, or ranked scenarios.
+DCIT does not produce probabilistic rankings, likelihood statements, confidence scores, or risk scores.
 
 DCIT does not generate narrative conclusions.
 
@@ -116,10 +116,10 @@ This limitation is deliberate and foundational.
 
 - Message contents  
 - Communication bodies  
-- Speech or expressive content  
+- Expressive or semantic content  
 - Semantic interpretation  
 
-**DCIT inspects systems, not speech.**
+DCIT inspects systems, not speech.
 
 ---
 
@@ -157,19 +157,20 @@ This separation is structural and non-negotiable.
 
 DCIT is written for adversarial review. It is expected to be challenged by five distinct audiences:
 
-- **Professors / academic reviewers** test falsifiability, rigor, and novelty.  
-- **Government decision makers** test civil liberties exposure, misuse risk, and posture.  
-- **Implementors** test feasibility, enforceability, and determinism.  
-- **Industry leaders** test differentiation, liability, and scope discipline.  
-- **Citizens** test trust, surveillance risk, and abuse potential.
+- Professors / academic reviewers test falsifiability, rigor, and novelty.  
+- Government decision makers test civil liberties exposure, misuse risk, and posture.  
+- Implementors test feasibility, enforceability, and determinism.  
+- Industry leaders test differentiation, liability, and scope discipline.  
+- Citizens test trust, surveillance risk, and abuse potential.  
 
 DCIT is intentionally narrow to survive scrutiny across these rooms.
 
 The theory fails if:
-- necessary-condition claims are not reproducible,  
-- scope expands beyond post-event reconstruction,  
-- expressive content becomes processable, or  
-- identity/intent enters the model.
+
+- Necessary-condition claims are not reproducible,  
+- Scope expands beyond post-event reconstruction,  
+- Expressive or semantic content becomes processable, or  
+- Identity or intent enters the model.  
 
 ---
 
@@ -179,8 +180,10 @@ This repository contains:
 
 - Canonical definitions  
 - Structural laws  
+- Failure conditions  
 - Compliance contracts  
 - Positioning guidance  
+- Related work context  
 
 It does not contain monitoring code, behavioral analytics, detection tooling, or content processing.
 
@@ -193,6 +196,7 @@ Distributed Constraint Imprint Theory (DCIT) is:
 - Defined  
 - Scope-locked  
 - Boundary-hardened  
+- Structurally enforced  
 - Ready to serve as the foundation for compliant reconstruction tooling  
 
 Implementation work, if undertaken, must conform to this canon.
