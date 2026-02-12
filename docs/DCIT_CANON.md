@@ -38,6 +38,7 @@ DCIT does not apply to:
 - Real-time monitoring
 - Predictive modeling
 - Behavioral classification
+- Risk scoring
 - Identity attribution
 - Intent inference
 - Content or speech interpretation
@@ -105,7 +106,7 @@ Permitted inputs:
 
 Prohibited inputs:
 
-- Expressive message content
+- Expressive or semantic content
 - Communication bodies
 - Speech transcripts
 - Semantic interpretation
@@ -136,7 +137,7 @@ DCIT is invalidated if:
 2. Deterministic reconstruction cannot be replicated under identical inputs.
 3. Expressive content is required to derive constraint primitives.
 4. Identity, intent, or behavioral inference enters the model.
-5. The system expands into live or continuous observation.
+5. The theory is applied in a manner that enables live or continuous observation.
 
 If these occur, the model ceases to be DCIT.
 
@@ -147,7 +148,7 @@ If these occur, the model ceases to be DCIT.
 ### Objection: Is this merely timeline reconstruction?
 
 DCIT does not claim novelty in timeline aggregation.  
-Its contribution is epistemic restriction to necessary-condition reasoning and formal boundary enforcement.
+Its distinguishing characteristic is epistemic restriction to necessary-condition reasoning and formal boundary enforcement.
 
 ### Objection: Why exclude probability?
 
