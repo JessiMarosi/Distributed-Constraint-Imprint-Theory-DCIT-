@@ -67,6 +67,16 @@ Failure to satisfy these requirements invalidates DCIT compliance.
 
 3. Adaptive or learning-based cross-case systems are PROHIBITED.
 
+4. Operational baselines MUST be:
+   - Derived exclusively from the closed artifact set of the case, OR
+   - Provided as externally fixed parameters declared at case intake and recorded in the execution manifest.
+
+5. Operational baselines MUST NOT be:
+   - Population-derived
+   - Adaptively updated
+   - Learned across cases
+   - Shared through global reference models
+
 ---
 
 ## V. Output Requirements
@@ -97,10 +107,19 @@ Failure to satisfy these requirements invalidates DCIT compliance.
    - Artifact sets
    - Normalization rules
    - Configuration parameters
+   - Parser versions
 
    The system MUST produce materially identical outputs.
 
-2. Undocumented nondeterministic processes are PROHIBITED.
+2. The system MUST record:
+   - Input artifact manifest hash
+   - Parser/version manifest
+   - Parameter manifest
+   - Output manifest hash
+
+3. Undocumented nondeterministic processes are PROHIBITED.
+
+4. If identical manifests produce materially different outputs, compliance SHALL fail.
 
 ---
 

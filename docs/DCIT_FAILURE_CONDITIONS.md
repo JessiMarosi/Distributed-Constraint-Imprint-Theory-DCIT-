@@ -6,8 +6,8 @@ This document defines explicit invalidation conditions for Distributed Constrain
 
 Two categories are recognized:
 
-1. Theory invalidation  
-2. Compliance invalidation  
+1. Theory invalidation
+2. Compliance invalidation
 
 Failure under either category disqualifies DCIT as defined in the canonical document.
 
@@ -25,7 +25,7 @@ A necessary-condition claim of the form:
 
 is invalidated if a reproducible artifact set exists in which:
 
-- Constraint set C is present, and  
+- Constraint set C is present, and
 - Action class A did not occur.
 
 If reproducible, DCIT fails as a constraint-based theory.
@@ -36,11 +36,12 @@ If reproducible, DCIT fails as a constraint-based theory.
 
 Given identical:
 
-- Artifact sets  
-- Normalization rules  
-- Parameters  
+- Artifact sets
+- Normalization rules
+- Parameters
+- Parser versions
 
-If constraint extraction or reconstruction outputs differ materially across executions without explicit nondeterministic mechanisms, DCIT fails as a deterministic reconstruction framework.
+If constraint extraction or reconstruction outputs differ materially across executions without documented manifest differences, DCIT fails as a deterministic reconstruction framework.
 
 ---
 
@@ -48,9 +49,9 @@ If constraint extraction or reconstruction outputs differ materially across exec
 
 If constraint derivation requires:
 
-- Expressive message content  
-- Speech content  
-- Semantic interpretation  
+- Expressive message content
+- Speech content
+- Semantic interpretation
 
 DCIT fails as a system-artifact theory.
 
@@ -60,10 +61,10 @@ DCIT fails as a system-artifact theory.
 
 If DCIT requires:
 
-- Probability rankings  
-- Likelihood scoring  
-- Confidence scoring  
-- Risk scoring  
+- Probability rankings
+- Likelihood scoring
+- Confidence scoring
+- Risk scoring
 
 to produce operationally meaningful outputs, it fails its necessary-condition doctrine.
 
@@ -71,12 +72,12 @@ to produce operationally meaningful outputs, it fails its necessary-condition do
 
 ### 5. Epistemic Boundary Violation
 
-If DCITs claim structure expands into:
+If DCIT's claim structure expands into:
 
-- Identity attribution  
-- Intent inference  
-- Behavioral classification  
-- Legal or moral conclusions  
+- Identity attribution
+- Intent inference
+- Behavioral classification
+- Legal or moral conclusions
 
 DCIT ceases to function as defined.
 
@@ -90,17 +91,17 @@ A system is not DCIT-compliant if it exhibits any of the following.
 
 Support for:
 
-- Streaming ingestion  
-- Continuous telemetry  
-- Real-time monitoring  
+- Streaming ingestion
+- Continuous telemetry
+- Real-time monitoring
 
 invalidates compliance.
 
 ---
 
-### 2. Cross-Case Aggregation
+### 2. Cross-Case Aggregation or Adaptive Baselines
 
-Reuse of priors, baselines, or learned patterns across cases invalidates compliance.
+Reuse of priors, baselines, learned patterns, population-derived norms, or adaptive reference models across cases invalidates compliance.
 
 ---
 
@@ -108,10 +109,10 @@ Reuse of priors, baselines, or learned patterns across cases invalidates complia
 
 If the system processes:
 
-- Message bodies  
-- Speech transcripts  
-- Semantic embeddings  
-- Content-derived features  
+- Message bodies
+- Speech transcripts
+- Semantic embeddings
+- Content-derived features
 
 it is not DCIT-compliant.
 
@@ -121,10 +122,10 @@ it is not DCIT-compliant.
 
 Outputs that include:
 
-- Identity claims  
-- Intent assertions  
-- Guilt framing  
-- Behavioral labels  
+- Identity claims
+- Intent assertions
+- Guilt framing
+- Behavioral labels
 
 invalidate compliance.
 
@@ -134,10 +135,10 @@ invalidate compliance.
 
 Outputs that include:
 
-- Likelihood rankings  
-- Confidence scores  
-- Risk scores  
-- Most likely scenarios  
+- Likelihood rankings
+- Confidence scores
+- Risk scores
+- Most likely scenarios
 
 invalidate compliance.
 
@@ -146,6 +147,12 @@ invalidate compliance.
 ### 6. Narrative Generation
 
 Generation of story-form event reconstructions invalidates compliance.
+
+---
+
+### 7. Non-Deterministic Execution
+
+If identical artifact sets and identical run manifests produce materially different outputs, compliance is invalid.
 
 ---
 
