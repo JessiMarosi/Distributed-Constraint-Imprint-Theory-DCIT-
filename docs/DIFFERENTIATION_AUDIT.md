@@ -1,26 +1,26 @@
 ﻿# DCIT — Differentiation Audit (Template)
-Status: Template (No conclusions asserted)
+Status: Initial Extraction Complete (Preliminary Conclusion)
 Scope: Comparative structural extraction only (no doctrine modification)
 
 ---
 
 # Selection Methodology
 
-Candidate frameworks will be selected based on:
+Candidate frameworks were selected based on:
 
 - Academic citation frequency
 - Relevance to digital forensic reconstruction
 - Explicit reconstruction or event correlation scope
 - Availability of formal documentation or primary sources
 
-Strong candidates that present potential structural overlap with DCIT will be prioritized.
-Straw-man comparisons are prohibited.
+Strong candidates that present potential structural overlap with DCIT were prioritized.
+Straw-man comparisons were avoided.
 
 ---
 
 # Audit Integrity Rule
 
-Comparisons must be based on documented, published primary sources.
+Comparisons are based on documented, published primary sources.
 No inference beyond documented claims is permitted.
 If documentation is ambiguous, the result must be recorded as Undetermined.
 
@@ -46,7 +46,7 @@ Partial overlap does not constitute redundancy.
 
 # 1) DCIT Reference Baseline (Extraction Targets)
 
-## DCIT Structural Commitments (Must Hold)
+DCIT structural commitments include:
 
 - Post-event only (closed artifact sets; no streaming ingestion; no monitoring)
 - Case isolation (no cross-case learning; no shared state)
@@ -56,88 +56,61 @@ Partial overlap does not constitute redundancy.
 - No attribution, no identity inference, no intent inference
 - No narrative generation
 - Deterministic reproducibility under identical inputs
+- Explicit failure/invalidation criteria
 
 ---
 
-# 2) Comparison Set (Populate Later)
+# 2) Comparison Set
 
-Select representative models/frameworks from:
-
-- Digital forensic reconstruction methodologies
-- DFIR correlation frameworks
-- Formal constraint-based reconstruction approaches
-- Incident reconstruction standards or guidance
-
-Do not cherry-pick weak comparisons.
+Candidate 1 — Carrier & Spafford (2004), Event-Based Digital Forensic Investigation Framework  
+Candidate 2 — Casey (2011), Digital Evidence and Computer Crime (Reconstruction Methodology)  
+Candidate 3 — NIST SP 800-86 (2006), Guide to Integrating Forensic Techniques into Incident Response  
+Candidate 4 — Constraint-Based Formal Event Reconstruction via Model Checking and Causal Graph Methods (e.g., temporal logic log reconstruction research)
 
 ---
 
-# 3) Extraction Schema (One Record Per Candidate)
+# 3) Summary Matrix (High-Level Extraction)
 
-## Candidate Record
-
-- Candidate Name:
-- Type:
-- Source(s):
-- Year / Version:
-
-### A) Scope Posture
-- Post-event only? (Y/N/Partial)
-- Allows monitoring / live ingestion? (Y/N/Partial)
-- Closed artifact sets required? (Y/N/Partial)
-
-### B) Evidence Model
-- Artifact-only? (Y/N/Partial)
-- Permits message bodies / content inspection? (Y/N/Partial)
-- Permits semantic interpretation? (Y/N/Partial)
-
-### C) Output Epistemics
-- Output types:
-- Uses probability / likelihood / confidence? (Y/N/Partial)
-- Uses ranking / scoring? (Y/N/Partial)
-- Permits narrative conclusions? (Y/N/Partial)
-
-### D) Attribution & Intent
-- Actor attribution in scope? (Y/N/Partial)
-- Identity inference in scope? (Y/N/Partial)
-- Intent inference in scope? (Y/N/Partial)
-
-### E) Cross-Case Behavior
-- Cross-case learning / baselines allowed? (Y/N/Partial)
-- Persistent knowledge base / model? (Y/N/Partial)
-
-### F) Determinism & Reproducibility
-- Determinism explicitly required? (Y/N/Partial)
-- Reproducibility requirements described? (Y/N/Partial)
-- Parameter disclosure required? (Y/N/Partial)
-
-### G) Failure / Invalidation Criteria
-- Explicit compliance failure conditions? (Y/N/Partial)
-- Explicit scope invalidation triggers? (Y/N/Partial)
-
-### H) Closest Overlap With DCIT
-- Overlap surface:
-- Key deltas:
-- Potential redundancy risk level: (Low / Medium / High) — justified with extracted facts only
+| Candidate | No Content | No Probability | No Attribution | 3-State Only | Case-Isolated | Deterministic Required | Explicit Invalidation |
+|-----------|------------|---------------|---------------|--------------|---------------|------------------------|-----------------------|
+| Carrier   | No         | No            | Partial       | No           | No            | No                     | No                    |
+| Casey     | No         | No            | No            | No           | Undetermined  | No                     | No                    |
+| NIST      | No         | Undetermined  | Partial       | No           | No            | No                     | No                    |
+| Formal    | Partial    | Undetermined  | Partial       | No           | No            | Undetermined           | No                    |
 
 ---
 
-# 4) Summary Matrix (Populate Later)
+# 4) Audit Conclusion (Preliminary)
 
-| Candidate | Post-event only | No monitoring | No content | No probability | No attribution | 3-state outputs | Case-isolated | Deterministic | Explicit failure criteria |
-|----------|------------------|--------------|------------|----------------|----------------|-----------------|--------------|--------------|---------------------------|
-| (TBD)    |                  |              |            |                |                |                 |              |              |                           |
+Based on the initial comparative extraction against representative reconstruction-oriented sources, DCIT does not appear intellectually redundant with the evaluated models at the level of enforced epistemic structure.
+
+Carrier & Spafford (2004) explicitly permit content inspection, confidence-based hypothesis evaluation, and narrative investigative posture.  
+Casey (2011) explicitly incorporates actor attribution, motive analysis, behavioral interpretation, and hypothesis-driven reconstruction.  
+NIST SP 800-86 (2006) provides procedural guidance for forensic integration but does not define a closed epistemic output space, deterministic enforcement requirement, semantic prohibition, or invalidation criteria.  
+Constraint-based formal reconstruction approaches demonstrate partial overlap in deterministic constraint reasoning, but do not simultaneously enforce content prohibition, attribution exclusion, non-probabilistic three-state outputs, case isolation, and explicit failure triggers.
+
+Therefore, differentiation — if sustained — rests not on invention of individual components, but on the enforced combination of:
+
+1. Closed post-event artifact posture  
+2. Semantic/content prohibition  
+3. Non-probabilistic three-state outputs (Necessary / Impossible / Undetermined)  
+4. Prohibition of attribution and intent inference  
+5. Case isolation  
+6. Determinism expectations  
+7. Explicit invalidation criteria  
+
+No evaluated framework enforces all of these simultaneously.
+
+This conclusion remains provisional pending expansion of the comparison set and full primary-source extraction where excerpts were used.
 
 ---
 
-# 5) Audit Conclusion (Leave Blank Until Populated)
+# References
 
-Conclusion options:
+Carrier, B. D., & Spafford, E. H. (2004). An event-based digital forensic investigation framework. DFRWS.
 
-A) Structurally differentiated  
-B) Redundancy risk detected  
-C) Undetermined — additional sources required
+Casey, E. (2011). Digital evidence and computer crime (3rd ed.). Academic Press.
 
----
+Kent, K., Chevalier, S., Grance, T., & Dang, H. (2006). NIST SP 800-86: Guide to integrating forensic techniques into incident response.
 
-This audit does not modify DCIT doctrine.
+Gunestas, E., & Bilgin, A. (2016). Log analysis using temporal logic and reconstruction approach. Journal of Digital Forensics, Security and Law.
